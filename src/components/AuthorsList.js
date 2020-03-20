@@ -49,7 +49,7 @@ const AuthorsList = () => {
                     <tr key={i}>
                         <td className="tableData">{author.firstName} {author.lastName}</td>
                         <td className="tableData">
-                            <Link to={`/authors/edit/${author._id}`}>View</Link>{" "} 
+                            <Link to={`/authors/view/${author._id}`}>View</Link>{" "} 
                             <Link to={`/authors/edit/${author._id}`}>Edit</Link>{" "} 
                             <button onClick={() => Delete(author._id)}>Delete</button>
                         </td>

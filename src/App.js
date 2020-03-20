@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.css';
-import {Router,Link} from "@reach/router";
+import {Router} from "@reach/router";
 import AuthorsList from './components/AuthorsList';
 import AuthorForm from './components/AuthorsForm';
 import EditAuthor from './components/EditAuthor';
+import AuthorView from './components/AuthorView';
 
 function App() {
   return (
@@ -14,11 +15,9 @@ function App() {
       <Router>
         <AuthorsList path="/"/>
         <AuthorForm path="/author/add" />
-        <EditAuthor path = "/author/:id" />
+        <EditAuthor path = "/authors/edit/:id" />
+        <AuthorView path = "/authors/view/:id" />
       </Router>
-
-
-
     </div>
   );
   }
